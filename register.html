@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Register and join Gameverse to play your favorite games."
+      name="description"
+    />
+    <title>Gameverse - Register</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/register.css" rel="stylesheet" />
+    <link href="./assets/images/logo.png" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg w-100 position-fixed">
+        <div class="container d-flex justify-content-between">
+          <a
+            class="navbar-brand fs-3 fw-bold"
+            href="./index.html"
+            rel="noopener"
+          >
+            Gameverse <i class="fa-solid fa-gamepad ms-1"></i>
+          </a>
+          <a
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Menu"
+            class="toggle-menu"
+            href="#"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="navbar-container">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  aria-current="page"
+                  class="nav-link"
+                  href="./index.html"
+                  role="button"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html" role="button">Login</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-outline-semi-white px-3 active"
+                  href="./register.html"
+                  role="button"
+                  >Join Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="signup vh-100 center-elem">
+      <div class="container rounded-4 p-5 text-center">
+        <div class="signup-header logo mx-auto mb-5">
+          <img alt="" src="./assets/images/logo3.png" />
+        </div>
+        <form action="" class="signup-body">
+          <div class="row d-flex">
+            <div class="first-name col-md-6 mb-3">
+              <input
+                class="form-control"
+                id="first-name"
+                placeholder="First name"
+                type="text"
+              />
+              <span class="alert alert-danger py-1 invalid-feedback">
+                Minimum name Length 2 and maximum is 20
+              </span>
+            </div>
+            <div class="last-name col-md-6 mb-3">
+              <input
+                class="form-control"
+                id="last-name"
+                placeholder="Last name"
+                type="text"
+              />
+              <span class="alert alert-danger py-1 invalid-feedback">
+                Minimum name length 2 and maximum is 20
+              </span>
+            </div>
+          </div>
+          <div class="email mb-3">
+            <input
+              class="form-control"
+              id="email"
+              placeholder="Email"
+              type="email"
+            />
+            <span class="alert alert-danger py-1 invalid-feedback">
+              Invalid email format
+            </span>
+          </div>
+          <div class="age mb-3">
+            <input
+              class="form-control"
+              id="age"
+              placeholder="Age"
+              type="number"
+            />
+            <span class="alert alert-danger py-1 invalid-feedback">
+              Age must be between 13 and 80
+            </span>
+          </div>
+          <div class="password mb-3 position-relative">
+            <input
+              class="form-control"
+              id="password"
+              placeholder="Password"
+              type="password"
+            />
+            <i class="password-icon fa-solid fa-eye position-absolute"></i>
+            <ul class="alert alert-danger py-1 invalid-feedback">
+              Password Must contain at least:
+              <li>One uppercase letter</li>
+              <li>One lowercase letter</li>
+              <li>One number</li>
+              <li>Minimum 8 length</li>
+            </ul>
+          </div>
+          <div class="confirm-password position-relative mb-3">
+            <input
+              class="form-control"
+              id="confirm-password"
+              placeholder="Confirm password"
+              type="password"
+            />
+            <i class="password-icon fa-solid fa-eye position-absolute"></i>
+            <span class="alert alert-danger py-1 invalid-feedback">
+              Password must match
+            </span>
+          </div>
+          <button class="d-block w-100 btn btn-signup my-3" type="submit">
+            SIGNUP
+          </button>
+        </form>
+        <div class="signup-footer">
+          <span> Already have an account?</span>
+          <a class="btn ms-2 btn-login" href="./login.html"> Login </a>
+          <p class="text-lead" id="msg"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/register.js" type="module"></script>
+  </body>
+</html>

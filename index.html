@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./assets/images/logo.png" rel="icon" type="image/x-icon" />
+    <title>Gameverse - Discover Exciting Games at Your Fingertips</title>
+    <meta
+      content="Discover a world of exciting games right at your fingertips. Join us today and embark on an unforgettable gaming adventure."
+      name="description"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg w-100 position-fixed">
+      <div class="container d-flex justify-content-between">
+        <a class="navbar-brand fs-3 fw-bold" href="#" rel="noopener">
+          Gameverse <i class="fa-solid fa-gamepad ms-1"></i>
+        </a>
+        <a
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle Menu"
+          class="toggle-menu"
+          href="#"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="navbar-container">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                aria-current="page"
+                class="nav-link active"
+                href="#"
+                role="button"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html" role="button">Login</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-outline-semi-white px-3"
+                href="./register.html"
+                role="button"
+                >Join Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="landing center-elem">
+        <div class="overlay w-100 vh-100 center-elem">
+          <div class="container">
+            <div class="about text-center text-white">
+              <div class="logo mx-auto">
+                <img alt="Gameverse Logo" src="./assets/images/logo3.png" />
+              </div>
+              <div class="description mx-auto">
+                <p class="lead fs-4 pt-4 pb-2">
+                  Discover a world of exciting games right at your fingertips.
+                  We bring you a curated selection of the latest and greatest
+                  games. Join us today and embark on an unforgettable gaming
+                  adventure.
+                </p>
+              </div>
+              <a
+                class="btn btn-login rounded-pill px-5 py-3 text-white"
+                href="./login.html"
+                >Login</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="recommended">
+        <div class="container rounded-4 p-5">
+          <div class="section-heading mb-5">
+            <h1>Recommended Games</h1>
+          </div>
+          <div class="row g-5" id="row"></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="loading center-elem d-none">
+      <span class="loader"></span>
+    </div>
+    <div
+      aria-label="Error Message"
+      class="error-modal position-fixed text-center alert alert-danger p-3 opacity-0"
+      id="error-modal"
+    >
+      <div class="modal-content">
+        <div class="modal-icon mb-4">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
+        <p class="error-caption">
+          Please login first to unlock all our features <br />
+          If you still not register Join us and discover lots !
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid py-3 text-center">
+        <p class="lead">
+          &copy; 2023 Gameverse By <span>Mohamed Ahmed</span>. All Rights
+          Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

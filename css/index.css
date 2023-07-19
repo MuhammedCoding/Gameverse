@@ -1,0 +1,106 @@
+body {
+  color: var(--secondary-color);
+}
+
+.landing {
+  padding-top: 70px;
+  background: linear-gradient(
+    180deg,
+    rgba(73, 116, 165, 1) 31%,
+    rgba(31, 33, 34, 1) 100%
+  );
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .logo {
+    width: 200px;
+    height: 120px;
+    animation: bounceInDown 2.5s ease forwards;
+  }
+  .description {
+    max-width: 800px;
+    animation: bounceInLeft 2s ease forwards;
+  }
+  .btn-login {
+    animation: bounceInDown 2s ease forwards;
+    background-color: var(--text-main-color);
+    transition: all 0.4s;
+    font-size: 1.25rem;
+  }
+
+  .btn-login:hover {
+    background-color: var(--text-secondary-color);
+    color: var(--text-main-color) !important;
+  }
+}
+
+.recommended {
+  padding: var(--section-padding) 0;
+  .container {
+    background-color: var(--secondary-color);
+  }
+
+  .section-heading {
+    color: var(--text-main-color);
+  }
+
+  .card {
+    background-color: var(--bs-dark);
+    .badge {
+      height: fit-content;
+    }
+    color: var(--text-secondary-color) !important;
+
+    .game-description p {
+      font-size: 0.875rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .game-name {
+      transition: color 0.4s;
+    }
+  }
+  .card:hover .game-name {
+    color: var(--text-main-color);
+  }
+
+  .text-bg-semi-light {
+    background-color: var(--text-main-color);
+    color: var(--text-secondary-color);
+  }
+}
+.error-modal {
+  max-height: 100%;
+  top:10%;
+  right: 10%;
+  z-index: 9999;
+  visibility: hidden;
+  transition: all 1s;
+  box-shadow: 0 2px 5px 0 rgba(234, 24, 95,0.33)
+}
+.modal-icon{
+  display: flex;
+  width: 60px;
+  height: 60px;
+  background: #e91e636e;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: auto;
+  color: #a60942;
+  font-size: 26px;
+}
+.error-caption{
+  font-weight: 400;
+  margin: 0;
+}
+
+.show-modal {
+  max-height: 100%;
+  visibility: visible !important;
+  transition-delay: 0s;
+  opacity: 1 !important;
+}

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="Discover exciting game details at Gameverse. Get game screenshots, genre, platform, publisher, developer, and release date. Download and play games on PC and browser platforms."
+      name="description"
+    />
+    <meta
+      content="gameverse, game details, screenshots, genre, platform, publisher, developer, release date, download, PC, browser"
+      name="keywords"
+    />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/details.css" rel="stylesheet" />
+    <link href="./assets/images/logo.png" rel="icon" type="image/x-icon" />
+    <script src="./js/authentication.js"></script>
+    <title>Gameverse - Game Details</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg w-100 position-fixed">
+        <div class="container d-flex justify-content-between">
+          <a class="navbar-brand fs-3 fw-bold" href="./home.html">
+            Gameverse <i class="fa-solid fa-gamepad ms-1"></i>
+          </a>
+          <a class="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="navbar-container">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item">
+                <a
+                  aria-current="page"
+                  class="nav-link text-uppercase"
+                  href="./home.html"
+                  role="button"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown text-uppercase">
+                <a
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                >
+                  Categories
+                </a>
+                <ul class="dropdown-menu categories-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-category="mmorpg"
+                      role="button"
+                      >mmorpg</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-category="shooter"
+                      role="button"
+                      >shooter</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-category="sailing"
+                      role="button"
+                      >sailing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-category="permadeath"
+                      role="button"
+                      >permadeath</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-category="superhero"
+                      role="button"
+                      >superhero</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" data-category="pixel" role="button"
+                      >pixel</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" data-category="pvp" role="button"
+                      >pvp</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      data-category="action"
+                      role="button"
+                      >action</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown text-uppercase">
+                <a
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  href="#"
+                  role="button"
+                >
+                  Platform
+                </a>
+                <ul class="dropdown-menu platform-menu">
+                  <li><a class="dropdown-item" data-platform="pc">PC</a></li>
+                  <li>
+                    <a class="dropdown-item" data-platform="browser">Browser</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item profile">
+                <a
+                  class="nav-link center-elem"
+                  href="./profile.html"
+                  role="button"
+                >
+                  <div class="profile-img rounded-circle">
+                    <img alt="Profile Image" loading="lazy" src="" />
+                  </div>
+                  <span id="user-name"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="./index.html" id="logout-btn" role="button"
+                  ><i class="fa fa-sign-out"></i>Log out</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="image rounded-3 overflow-hidden">
+            <img alt="" id="game-image" src="" />
+          </div>
+          <div class="game-link center-elem">
+            <a
+              class="btn bg-primary-subtle text-primary-emphasis px-4 py-2 fs-4 mt-4"
+              role="button"
+              target="_blank"
+            >
+              <i class="fa fa-download me-1"></i>
+              Download
+            </a>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <h1 class="name"></h1>
+          <p class="description"></p>
+
+          <span
+            class="badge bg-primary-subtle text-primary-emphasis genre p-3 py-2"
+          ></span>
+          <span
+            class="badge bg-primary-subtle text-primary-emphasis platform p-3 py-2"
+          ></span>
+
+          <div class="screenshots mt-5">
+            <h3>Screenshots</h3>
+            <div
+              class="carousel slide mt-2"
+              data-bs-interval="3000"
+              data-bs-ride="carousel"
+              id="carouselExampleSlidesOnly"
+            >
+              <div class="carousel-inner"></div>
+            </div>
+          </div>
+          <hr />
+          <div class="additional-info lead">
+            <h3>Additional Information</h3>
+            <div class="info-container">
+              <div class="item">
+                <span>Publisher:</span>
+                <p class="publisher"></p>
+              </div>
+              <div class="item">
+                <span>Developer:</span>
+                <p class="dev"></p>
+              </div>
+              <div class="item">
+                <span>Release-date:</span>
+                <p class="date"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="loading center-elem d-none">
+      <span class="loader"></span>
+    </div>
+
+    <footer>
+      <div class="container-fluid py-3 text-center">
+        <p class="lead">
+          &copy; 2023 Gameverse By <span>Mohamed Ahmed</span>. All Rights
+          Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/details.js" type="module"></script>
+  </body>
+</html>

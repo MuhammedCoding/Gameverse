@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameverse - Profile</title>
+    <meta name="description" content="Update your personal info at Gameverse. Change your profile image, first name, last name, and password.">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/global.css" rel="stylesheet">
+    <link href="./css/profile.css" rel="stylesheet">
+    <script src="./js/authentication.js"></script>
+    <link href="./assets/images/logo.png" rel="icon" type="image/x-icon" />
+</head>
+
+
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg w-100 position-fixed">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand fs-3 fw-bold" href="./home.html">
+                Gameverse <i class="fa-solid fa-gamepad ms-1"></i>
+            </a>
+            <a
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle Menu"
+                    class="toggle-menu"
+                    href="#"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="navbar-container">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a
+                                aria-current="page"
+                                class="nav-link text-uppercase"
+                                href="./home.html"
+                                role="button"
+                        >Home</a
+                        >
+                    </li>
+                    <li class="nav-item dropdown text-uppercase">
+                        <a
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                href="#"
+                                role="button"
+                        >
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu categories-menu">
+                            <li>
+                                <a
+                                        class="dropdown-item"
+                                        data-category="mmorpg"
+                                        role="button"
+                                >mmorpg</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                        class="dropdown-item"
+                                        data-category="shooter"
+                                        role="button"
+                                >shooter</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                        class="dropdown-item"
+                                        data-category="sailing"
+                                        role="button"
+                                >sailing</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                        class="dropdown-item"
+                                        data-category="permadeath"
+                                        role="button"
+                                >permadeath</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                        class="dropdown-item"
+                                        data-category="superhero"
+                                        role="button"
+                                >superhero</a
+                                >
+                            </li>
+                            <li>
+                                <a class="dropdown-item" data-category="pixel" role="button"
+                                >pixel</a
+                                >
+                            </li>
+                            <li>
+                                <a class="dropdown-item" data-category="pvp" role="button"
+                                >pvp</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                        class="dropdown-item"
+                                        data-category="action"
+                                        role="button"
+                                >action</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown text-uppercase">
+                        <a
+                                aria-expanded="false"
+                                class="nav-link dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                                href="#"
+                                role="button"
+                        >
+                            Platform
+                        </a>
+                        <ul class="dropdown-menu platform-menu">
+                            <li><a class="dropdown-item" data-platform="pc">PC</a></li>
+                            <li>
+                                <a class="dropdown-item" data-platform="browser">Browser</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item profile">
+                        <a
+                                class="nav-link center-elem active"
+                                href="./profile.html"
+                                role="button"
+                        >
+                            <div class="profile-img rounded-circle">
+                                <img alt="Profile Image" loading="lazy" src="" />
+                            </div>
+                            <span id="user-name"></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./index.html" id="logout-btn" role="button"
+                        ><i class="fa fa-sign-out"></i>Log out</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <main id="content">
+        <div class="update-profile pb-5">
+            <div class="container w-50 rounded-4 p-5">
+                <h1 class="section-heading d-inline-block position-relative mb-5">Update Personal Info</h1>
+                <form>
+                    <div class="change-image center-elem flex-column">
+                        <div class="profile-img-preview overflow-hidden rounded-circle mb-3">
+                            <img alt="" src="./assets/images/User.png">
+                        </div>
+                        <div
+                            class=" btn bg-primary-subtle text-primary-emphasis text-center input-file position-relative mb-5">
+                            <label for="imgInput">Change Image</label>
+                            <input accept="image/*" id="imgInput" type="file">
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-5">
+                        <label class="mb-2" for="firstName">First Name</label>
+                        <input class="form-control" id="firstName" readonly type="text" value="Mohamed">
+                    </div>
+
+                    <div class="form-group mb-5">
+                        <label for="lastName">Last Name</label>
+                        <input class="form-control" id="lastName" readonly type="text" value="Ahmed">
+                    </div>
+                    <p class="lead">Write your current password in order to enable to update your info</p>
+                    <div class="form-group mb-5">
+                        <label class="mb-2" for="currentPass">Current Password</label>
+                        <input class="form-control" id="currentPass" type="password">
+                        <span class="alert alert-danger py-1 invalid-feedback">
+                            Incorrect password
+                        </span>
+                    </div>
+
+                    <div class="form-group mb-5">
+                        <label class="mb-2" for="email">Email</label>
+                        <input class="form-control" id="email" readonly type="email" value="mohamedahmed@example.com">
+                        <span class="alert alert-danger py-1 invalid-feedback">
+                            Invalid email format
+                        </span>
+                    </div>
+                    <h4>Change Password</h4>
+                    <div class="form-group mb-5">
+                        <label class="mb-2" for="newPass">New Password</label>
+                        <input class="form-control" id="newPass" readonly type="password">
+                        <ul class="alert alert-danger py-1 invalid-feedback">
+                            Password Must contain at least:
+                            <li>One uppercase letter</li>
+                            <li>One lowercase letter</li>
+                            <li>One number</li>
+                            <li>Minimum 8 length</li>
+                        </ul>
+                    </div>
+                    <div class="form-group mb-5">
+                        <label class="mb-2" for="confirmPassword">Confirm Password</label>
+                        <input class="form-control" id="confirmPassword" readonly type="password">
+                        <span class="alert alert-danger py-1 invalid-feedback">
+                            Passworm must match
+                        </span>
+                    </div>
+                    <button class="btn bg-primary-subtle text-primary-emphasis" disabled id="submitBtn"
+                        type="submit">Save
+                        Changes
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div class="success-modal position-fixed top-0 start-0 bottom-0 end-0 opacity-0 center-elem text-center"
+        id="successModal">
+        <div class="modal-content">
+            <p class="success-caption lead"> Profile info Updated Successfully! 🎉</p>
+            <i class="fa-solid fa-circle-check fa-bounce"></i>
+        </div>
+    </div>
+    <footer>
+        <footer>
+            <div class="container-fluid py-3  text-center">
+                <p class="lead">&copy; 2023 Gameverse By <span>Mohamed Ahmed</span>. All Rights
+                    Reserved
+                </p>
+            </div>
+        </footer>
+
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/profile.js" type="module"></script>
+</body>
+
+</html>
+
+
+<body>
+
+
+</body>

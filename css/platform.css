@@ -1,0 +1,79 @@
+:root {
+  --main-color: #1f2122;
+  --secondary-color: #27292a;
+  --main-font-family: "Segoe UI", "Open Sans", sans-serif;
+  --secodary-font-family: "Poppins", sans-serif;
+  --section-padding: 6rem;
+  --text-main-color: #4974a5;
+  --text-secondary-color: #c8d5e4;
+}
+.navbar {
+  .navbar-collapse {
+    flex-grow: 1 !important;
+  }
+  .profile {
+    color: var(--text-secondary-color);
+    transition: color 0.4s;
+  }
+  .profile:hover {
+    color: var(--text-main-color);
+  }
+  .dropdown-menu {
+    background-color: var(--text-secondary-color);
+  }
+  .dropdown .active {
+    background-color: transparent;
+  }
+}
+
+.games {
+  padding: var(--section-padding) 0;
+  .container {
+    background-color: var(--secondary-color);
+  }
+
+  .section-heading {
+    color: var(--text-main-color);
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  .card {
+    background-color: var(--bs-dark) !important;
+    color: var(--text-secondary-color) !important;
+    transition: transform 0.3s;
+
+    .badge {
+      height: fit-content;
+    }
+    .game-description p {
+      font-size: 0.875rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .game-name {
+      transition: color 0.4s;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .card:hover .game-name {
+    color: var(--text-main-color);
+  }
+
+  .text-bg-semi-light {
+    background-color: var(--text-main-color);
+    color: var(--text-secondary-color);
+  }
+}
+
+@media (max-width: 576px) {
+  .games {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

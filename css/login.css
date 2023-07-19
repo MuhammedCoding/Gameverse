@@ -1,0 +1,64 @@
+form {
+  animation: bounceInUp 2s ease forwards;
+}
+
+.login {
+  padding-top: 70px;
+
+  .logo {
+    width: 200px;
+    height: 120px;
+    animation: bounceInDown 2.5s ease forwards;
+  }
+
+  .container {
+    background-color: var(--secondary-color);
+  }
+
+  .login-body {
+    .form-control {
+      background-color: var(--text-secondary-color) !important;
+    }
+
+    .password-icon {
+      top: 12px;
+      right: 32px;
+      cursor: pointer;
+    }
+
+    .btn-login {
+      background-color: var(--text-main-color);
+      color: var(--text-secondary-color);
+      transition: background-color 0.4s, color 0.4s;
+    }
+    .btn-login:hover {
+      background-color: var(--text-secondary-color);
+      color: var(--text-main-color);
+    }
+  }
+
+  .login-footer span {
+    color: var(--text-secondary-color);
+  }
+
+  .login-footer {
+    .btn-signup {
+      color: var(--text-secondary-color);
+      border-color: var(--text-secondary-color);
+      transition: background-color 0.4s, color 0.4s, border-color 0.4s;
+    }
+    .btn-signup:hover {
+      background-color: var(--text-main-color);
+      color: var(--text-secondary-color);
+      border-color: var(--text-main-color);
+    }
+  }
+}
+
+/* RWD */
+/* Large screens (between 992px and 1199.98px) */
+@media (min-width: 992px) {
+  .login .container {
+    width: 50%;
+  }
+}

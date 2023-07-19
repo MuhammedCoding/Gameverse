@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      content="Log in to Gameverse and explore a world of exciting games. Join us and discover a wide range of games."
+      name="description"
+    />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/login.css" rel="stylesheet" />
+    <link href="./assets/images/logo.png" rel="icon" type="image/x-icon" />
+    <title>Gameverse - Login</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg w-100 position-fixed">
+        <div class="container d-flex justify-content-between">
+          <a
+            class="navbar-brand fs-3 fw-bold"
+            href="./index.html"
+            rel="noopener"
+          >
+            Gameverse <i class="fa-solid fa-gamepad ms-1"></i>
+          </a>
+          <a
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle Menu"
+            class="toggle-menu"
+            href="#"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+          <div class="navbar-container">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  aria-current="page"
+                  class="nav-link"
+                  href="./index.html"
+                  role="button"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./login.html" role="button"
+                  >Login</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn btn-outline-semi-white px-3"
+                  href="./register.html"
+                  role="button"
+                  >Join Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="login vh-100 center-elem">
+      <div class="container rounded-4 p-5 text-center">
+        <div class="login-header logo mx-auto mb-5">
+          <img alt="Gameverse Logo" src="./assets/images/logo3.png" />
+        </div>
+        <form action="" class="login-body">
+          <input
+            class="form-control mb-3"
+            id="email"
+            placeholder="Email"
+            required
+            type="email"
+          />
+          <span
+            class="alert alert-danger py-1 invalid-feedback"
+            id="email-error"
+          >
+            This email doesn't exist in the accounts.
+          </span>
+          <div class="password position-relative">
+            <input
+              class="form-control mb-3"
+              id="password"
+              placeholder="Password"
+              required
+              type="password"
+            />
+            <i class="password-icon fa-solid fa-eye position-absolute"></i>
+            <span
+              class="alert alert-danger py-1 invalid-feedback"
+              id="password-error"
+            >
+            </span>
+          </div>
+          <button class="d-block w-100 btn btn-login my-3" type="submit">
+            Login
+          </button>
+        </form>
+        <div class="login-footer">
+          <span> Don't have an account yet?</span>
+          <a class="btn ms-2 btn-signup" href="./register.html"> Signup </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/login.js" type="module"></script>
+  </body>
+</html>

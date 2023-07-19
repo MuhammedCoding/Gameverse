@@ -1,0 +1,37 @@
+:root {
+  --main-color: #1f2122;
+  --secondary-color: #27292a;
+  --main-font-family: "Segoe UI", "Open Sans", sans-serif;
+  --secodary-font-family: "Poppins", sans-serif;
+  --section-padding: 6rem;
+  --text-main-color: #4974a5;
+  --text-secondary-color: #c8d5e4;
+}
+
+main.container {
+  padding-top: var(--section-padding);
+  .description {
+    color: var(--text-secondary-color);
+  }
+
+  .additional-info p {
+    color: var(--text-secondary-color);
+  }
+  .game-link a {
+    transition: all 0.3s;
+  }
+
+  .game-link a:hover {
+    color: var(--text-secondary-color) !important;
+    background-color: var(--text-main-color) !important;
+  }
+}
+
+footer .container {
+  background-color: red;
+}
+@media (max-width: 576px) {
+  .col-md-5 {
+    margin-bottom: 28px !important;
+  }
+}
