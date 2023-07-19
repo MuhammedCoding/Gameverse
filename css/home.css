@@ -140,4 +140,10 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+
+}
+@media (max-width: 992px) {
+  .search-popover {
+    width: 80%;
+  }
 }

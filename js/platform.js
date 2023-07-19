@@ -64,6 +64,7 @@ platformMenu.forEach((a) => {
 window.addEventListener("popstate", () => {
   loadGamesFromUrl(urlConfig, url);
 });
+
 toggleMenu.addEventListener("click", openSideNav);
 logoutBtn.addEventListener("click", () =>
   localStorage.removeItem("activeUser"),
@@ -76,4 +77,4 @@ async function onStart() {
   setActiveItem(urlConfig);
 }
 
-onStart()
+onStart();

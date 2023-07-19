@@ -3,6 +3,8 @@ import { checkValidation, getUsers, regex } from "./validation.js";
 import {
   getActiveUser,
   getActiveUserIndex,
+  getCategoryGames,
+  getPlatformGames,
   getUserData,
   openSideNav,
   toggleMenu,
@@ -51,6 +53,19 @@ toggleMenu.addEventListener("click", openSideNav);
 logoutBtn.addEventListener("click", () =>
   localStorage.removeItem("activeUser"),
 );
+document.querySelectorAll(".categories-menu a").forEach(function (a) {
+  a.addEventListener("click", function (e) {
+    const category = e.target.dataset.category;
+    getCategoryGames(category);
+  });
+});
+document.querySelectorAll(".platform-menu a").forEach(function (a) {
+  a.addEventListener("click", function (e) {
+    const platform = e.target.dataset.platform;
+    getPlatformGames(platform);
+  });
+});
+toggleMenu.addEventListener("click", openSideNav);
 
 //functions related to events
 function imageInputHandler() {

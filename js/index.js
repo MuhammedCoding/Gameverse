@@ -2,7 +2,6 @@ import {displayData, loadGames, openSideNav, toggleMenu,} from "./utilities.js";
 
 //global vars
 const rowElement = document.getElementById("row");
-const errorModal = document.getElementById("error-modal");
 const url = "https://free-to-play-games-database.p.rapidapi.com/api/games";
 //events
 toggleMenu.addEventListener("click", openSideNav);

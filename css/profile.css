@@ -116,3 +116,9 @@ body {
     padding: 1rem 0.5rem;
   }
 }
+
+@media (min-width: 1200px) {
+  .update-profile .container {
+    width: 75%;
+  }
+}

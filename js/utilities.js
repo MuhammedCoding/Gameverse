@@ -147,5 +147,5 @@ function showErrorModal() {
   modal.classList.add("show-modal");
   setTimeout(() => {
     modal.classList.remove("show-modal");
-  }, 3000);
+  }, 7000);
 }
