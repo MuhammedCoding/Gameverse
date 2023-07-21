@@ -1,18 +1,13 @@
 "use strict";
 
-import {
-  checkValidation,
-  getUsers,
-  regex,
-  generateUniqueToken,
-} from "./validation.js";
-import { openSideNav, toggleMenu } from "./utilities.js";
+import {checkValidation, generateUniqueToken, getUsers, regex,} from "./validation.js";
+import {openSideNav, toggleMenu} from "./utilities.js";
 // variables
 const inputs = Array.from(document.querySelectorAll("input"));
 const form = document.querySelector("form");
 const passIcon = document.querySelector(".password .password-icon");
 const confirmPassIcon = document.querySelector(
-  ".confirm-password .password-icon"
+  ".confirm-password .password-icon",
 );
 let usersArrayList = getUsers() === null ? [] : getUsers();
 
@@ -70,7 +65,7 @@ function setNewUser() {
     email: email.value,
     password: password.value,
     age: age.value,
-    img: "../assets/images/User.png",
+    img: "assets/images/User.png",
     token: generateUniqueToken(usersArrayList),
   };
 
