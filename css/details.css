@@ -10,26 +10,25 @@
 
 main.container {
   padding-top: var(--section-padding);
-  .description {
-    color: var(--text-secondary-color);
-  }
-
-  .additional-info p {
-    color: var(--text-secondary-color);
-  }
-  .game-link a {
-    transition: all 0.3s;
-  }
-
-  .game-link a:hover {
-    color: var(--text-secondary-color) !important;
-    background-color: var(--text-main-color) !important;
-  }
 }
 
-footer .container {
-  background-color: red;
+main.container .description {
+  color: var(--text-secondary-color);
 }
+
+main.container .additional-info p {
+  color: var(--text-secondary-color);
+}
+
+main.container .game-link a {
+  transition: all 0.3s;
+}
+
+main.container .game-link a:hover {
+  color: var(--text-secondary-color) !important;
+  background-color: var(--text-main-color) !important;
+}
+
 @media (max-width: 576px) {
   .col-md-5 {
     margin-bottom: 28px !important;

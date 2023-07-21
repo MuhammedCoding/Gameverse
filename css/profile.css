@@ -1,124 +1,131 @@
 :root {
-  --main-color: #1f2122;
-  --secondary-color: #27292a;
-  --main-font-family: "Segoe UI", "Open Sans", sans-serif;
-  --secodary-font-family: "Poppins", sans-serif;
-  --section-padding: 6rem;
-  --text-main-color: #4974a5;
-  --text-secondary-color: #c8d5e4;
+    --main-color: #1f2122;
+    --secondary-color: #27292a;
+    --main-font-family: "Segoe UI", "Open Sans", sans-serif;
+    --secodary-font-family: "Poppins", sans-serif;
+    --section-padding: 6rem;
+    --text-main-color: #4974a5;
+    --text-secondary-color: #c8d5e4;
 }
 
 body {
-  color: var(--text-secondary-color);
+    color: var(--text-secondary-color);
 }
-.navbar {
-  .navbar-collapse {
+
+.navbar .navbar-collapse {
     flex-grow: 1 !important;
-  }
-  .profile {
+}
+
+.navbar .profile {
     color: var(--text-secondary-color);
     transition: color 0.4s;
-  }
-  .profile:hover {
+}
+
+.navbar .profile:hover {
     color: var(--text-main-color);
-  }
-  .dropdown-menu {
+}
+
+.navbar .dropdown-menu {
     background-color: var(--text-secondary-color);
-  }
-  .dropdown .active {
+}
+
+.navbar .dropdown .active {
     background-color: transparent;
-  }
 }
 
 .input-file input {
-  appearance: none;
-  opacity: 0;
+    appearance: none;
+    opacity: 0;
 }
 
 .input-file label {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
 }
 
 .update-profile {
-  padding-top: 100px;
-  .container {
+    padding-top: 100px;
+
+}
+
+.update-profile .container {
     background-color: var(--secondary-color);
-    .form-control {
-      background-color: var(--text-secondary-color) !important;
-    }
-    .profile-img-preview {
-      border: 2px solid var(--text-secondary-color);
-      width: 150px;
-      height: 150px;
-      overflow: hidden;
-    }
-  }
+}
+
+.update-profile .container .form-control {
+    background-color: var(--text-secondary-color) !important;
+}
+
+.update-profile .container .profile-img-preview {
+    border: 2px solid var(--text-secondary-color);
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
 }
 
 .section-heading::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  background: var(--text-secondary-color);
-  bottom: -12px;
-  right: 0;
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: var(--text-secondary-color);
+    bottom: -12px;
+    right: 0;
 }
 
 .success-modal {
-  max-height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 9999;
-  visibility: hidden;
-  transition: all 0.4s;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    visibility: hidden;
+    transition: all 0.4s;
 }
 
 .show-modal {
-  max-height: 100%;
-  visibility: visible !important;
-  transition-delay: 0s;
-  opacity: 1 !important;
+    max-height: 100%;
+    visibility: visible !important;
+    transition-delay: 0s;
+    opacity: 1 !important;
 }
 
 .success-modal p {
-  color: var(--text-main-color);
-  padding-bottom: 5rem;
-  font-size: 1.5rem;
+    color: var(--text-main-color);
+    padding-bottom: 5rem;
+    font-size: 1.5rem;
 }
 
 .success-modal i {
-  font-size: 5rem;
-  color: #198754;
+    font-size: 5rem;
+    color: #198754;
 }
 
 .success-modal .modal-content {
-  margin: auto;
-  width: 40%;
-  background-color: var(--text-secondary-color);
-  padding: 3rem 1rem;
-  border-radius: 10px;
+    margin: auto;
+    width: 40%;
+    background-color: var(--text-secondary-color);
+    padding: 3rem 1rem;
+    border-radius: 10px;
 }
 
 @media (max-width: 576px) {
-  .success-modal p {
-    font-size: 0.875rem;
-    padding-bottom: 3rem;
-  }
+    .success-modal p {
+        font-size: 0.875rem;
+        padding-bottom: 3rem;
+    }
 
-  .success-modal i {
-    font-size: 3rem;
-  }
+    .success-modal i {
+        font-size: 3rem;
+    }
 
-  .success-modal .modal-content {
-    padding: 1rem 0.5rem;
-  }
+    .success-modal .modal-content {
+        padding: 1rem 0.5rem;
+    }
 }
 
 @media (min-width: 1200px) {
-  .update-profile .container {
-    width: 75%;
-  }
+    .update-profile .container {
+        width: 75%;
+    }
 }

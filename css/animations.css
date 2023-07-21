@@ -1,0 +1,68 @@
+@keyframes shadowPulse {
+    33% {
+        background: #fff;
+        box-shadow: -24px 0 var(--text-main-color),
+        24px 0 #fff;
+    }
+    66% {
+        background: var(--text-main-color);
+        box-shadow: -24px 0 #fff,
+        24px 0 #fff;
+    }
+    100% {
+        background: #fff;
+        box-shadow: -24px 0 #fff,
+        24px 0 var(--text-main-color);
+    }
+}
+
+@keyframes shadowPulse {
+    33% {
+        background: #fff;
+        box-shadow: -24px 0 var(--text-main-color),
+        24px 0 #fff;
+    }
+    66% {
+        background: var(--text-main-color);
+        box-shadow: -24px 0 #fff,
+        24px 0 #fff;
+    }
+    100% {
+        background: #fff;
+        box-shadow: -24px 0 #fff,
+        24px 0 var(--text-main-color);
+    }
+}
+
+@keyframes bounceInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
